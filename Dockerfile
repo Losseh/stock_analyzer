@@ -4,7 +4,7 @@ RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
 
 RUN pip install --upgrade pip
-RUN pip install yfinance
+RUN pip install pandas-datareader
 
 RUN mkdir -p /home/pi/stock_analyzer
 COPY . /home/pi/stock_analyzer
